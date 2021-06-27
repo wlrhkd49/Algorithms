@@ -16,8 +16,8 @@ arr.sort()
 if result!=0:
     arr.append(str(result))
 
-for i in range(len(arr)):
-    print(arr[i], end ='', sep='')
+# for i in range(len(arr)):
+#     print(arr[i], end ='', sep='')
 
 print(''.join(arr))
 
