@@ -16,4 +16,4 @@ queue.popleft()
 print(queue)
 queue.reverse() # 다음 출력을 위해 역순으로 바꾸기
 print(queue)
-print(list(queue))
+print(list(queue)) # list 자료형으로 변경
