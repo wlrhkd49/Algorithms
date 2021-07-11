@@ -1,8 +1,6 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-print(arr)
-
 result = 1e9
 final = 1
 
