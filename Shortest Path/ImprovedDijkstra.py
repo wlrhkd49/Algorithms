@@ -1,3 +1,4 @@
+# 시간복잡도 O(ElogN)
 import heapq
 import sys
 input = sys.stdin.readline
