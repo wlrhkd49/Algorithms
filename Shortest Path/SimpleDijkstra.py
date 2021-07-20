@@ -1,3 +1,4 @@
+# 시간복잡도 O(N^2)
 import sys
 input = sys.stdin.readline
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
