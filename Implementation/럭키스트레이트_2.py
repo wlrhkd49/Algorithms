@@ -1,14 +1,13 @@
 n = input()
-length = len(n)
-summary = 0 
+a = 0
+b = 0
+for i in range(int(len(n)/2)):
+    a += int(n[i])
 
-for i in range(length//2):
-    summary += int(n[i])
-
-for i in range(length//2, length):
-    summary -= int(n[i])
-
-if(summary == 0):
+for j in range(int((len(n)/2)), len(n)):
+    b += int(n[j])
+print(a, b)
+if a == b:
     print("LUCKY")
 else:
     print("READY")
