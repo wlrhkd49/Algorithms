@@ -1,11 +1,10 @@
 # 순차탐색 최악 시간복잡도 : O(n)
 def sequential_search(n, target, array):
-    # 각 원소를 하나씩 확인하며
+    # 각 원소를 하나씩 확인
     for i in range(n):
-        # 현재의 원소가 찾고자 하는 원소와 동일한 경우
-        if target == array[i]:
-            # 현재의 위치 반환
-            return i+1
+        # 현재 원소가 찾고자 하는 원소일 경우
+        if array[i] == target:
+            return i + 1; # 현재 위치를 반환
 
 print("생성할 원소 개수를 입력한 다음 한 칸 띄고 찾을 문자열을 입력하세요.")
 input_data = input().split()
