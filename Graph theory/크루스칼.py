@@ -31,10 +31,8 @@ for _ in range(e):
     # 비용순으로 정렬하기 위해서 튜블의 첫 번째 원소를 비용으로 설정
     edges.append((cost,a,b))
 
-# 간선을 비용순으로 정렬
 edges.sort()
 
-# 간선을 하나씩 확인하며
 for edge in edges:
     cost, a, b = edge
     # 사이클이 발생하지 않는 경우에만 집합에 포함
