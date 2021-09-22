@@ -1,10 +1,5 @@
-x, y = input().split()
+n = input()
 
-# x, y문자열 뒤집기
-x = x[::-1]
-y = y[::-1]
+data = n.split()
 
-if int(x) < int(y):
-    print(y)
-else:
-    print(x)
+print(len(data))
