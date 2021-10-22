@@ -1,6 +1,13 @@
-a, b, c = map(int, input().split())
+# 유클리드 호제법
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
-print((a+b)%c)
-print(((a%c)+(b%c))%c)
-print((a*b)%c)
-print(((a%c)*(b%c))%c)
+def lcm(a, b):
+    return (a * b) // gcd(a,b)
+
+a, b = map(int, input().split())
+
+print(gcd(a,b))
+print(lcm(a,b))
