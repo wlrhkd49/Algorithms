@@ -13,7 +13,8 @@ for i in range(4, 100001):
     dp[i][1] = (dp[i-2][0])%MOD + (dp[i-2][2]) % MOD
     # 1, 2으로 끝난 숫자에 3 더하기
     dp[i][2] = (dp[i-3][0])%MOD + (dp[i-3][1]) % MOD
+    # 점화식 dp[더한 값][끝나는 숫자] = dp에서 끝나는 숫자와 다른 dp값 더하기
 
 for _ in range(int(input())):
     x = int(input())
-    print(sum(dp[x])%MOD)
+    print(sum(dp[x]) % MOD)
