@@ -22,8 +22,8 @@ def solution(N, road, K):
         if distance[now] < dist:
             continue
         for i in graph[now]:
-            cost = dist + i[1]
-            if cost < distance[i[0]]:
+            cost = dist + i[1] # i[1] 은 비용
+            if cost < distance[i[0]]: # i[0] 은 노드
                 distance[i[0]] = cost
                 heapq.heappush(q, (cost, i[0]))
     
